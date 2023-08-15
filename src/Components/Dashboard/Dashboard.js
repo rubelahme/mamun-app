@@ -5,13 +5,13 @@ const Dashboard = () => {
   const [result, setResult] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch("https://mamun-sarver-app.vercel.app/users")
       .then((res) => res.json())
       .then((data) => setItem(data));
   }, [item]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/code")
+    fetch("https://mamun-sarver-app.vercel.app/code")
       .then((res) => res.json())
       .then((data) => setResult(data));
   }, [result]);
