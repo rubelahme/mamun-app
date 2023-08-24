@@ -8,13 +8,13 @@ const Dashboard = () => {
     fetch("https://mamun-sarver-app.vercel.app/users")
       .then((res) => res.json())
       .then((data) => setItem(data));
-  }, [item]);
+  }, []);
 
   useEffect(() => {
     fetch("https://mamun-sarver-app.vercel.app/code")
       .then((res) => res.json())
       .then((data) => setResult(data));
-  }, [result]);
+  }, []);
 
   return (
     <div>
